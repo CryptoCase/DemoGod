@@ -9,7 +9,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .9;
-  margin-left: 5%;
+  margin-left: 2.5%;
 }
 
 h2 {
@@ -48,50 +48,6 @@ img {
   height: auto;
   padding: 1px;
   margin: 0px;
-  background-size: cover;
-  background-position: center;
-}
-
-.creation {
-  width: auto;
-  height: auto;
-  padding: 0px;
-  margin: 0px;
-  margin-top: 20px;
-  background-image: url("");
-  background-size: cover;
-  background-position: center;
-}
-
-.growth {
-  width: auto;
-  height: auto;
-  padding: 10px;
-  margin: auto;
-  margin-top: 20px;
-  background-image: url("");
-  background-size: cover;
-  background-position: center;
-}
-
-.failure {
-  width: auto;
-  height: auto;
-  padding: 10px;
-  margin: auto;
-  margin-top: 20px;
-  background-image: url("");
-  background-size: cover;
-  background-position: center;
-}
-
-.rebirth {
-  width: auto;
-  height: auto;
-  padding: 10px;
-  margin: auto;
-  margin-top: 20px;
-  background-image: url("");
   background-size: cover;
   background-position: center;
 }
