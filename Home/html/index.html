@@ -24,23 +24,50 @@
     <!-- Navigation -->
     <nav class="subdomain">
       <ul class="subdomain">
-        <li><a href="">Iota</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Docs</a></li>
-        <li><a href="">Ecosystem</a></li>
+        <li><a class="subnav-item" href="">Iota</a></li>
+        <li><a class="subnav-item" href="">Blog</a></li>
+        <li><a class="subnav-item" href="">Docs</a></li>
+        <li><a class="subnav-item" href="">Ecosystem</a></li>
       </ul>
     </nav>
     <nav class="main">
-      <img class="qubic_logo" src="https://qubic.iota.org/static/qubic_font.svg" alt="Qubic Logo">
       <ul class="main">
-        <li><a href="">Intro</a></li>
-        <li><a href="">Oracles</a></li>
-        <li><a href="">Qubics</a></li>
-        <li><a href="">Protocol</a></li>
-        <li><a href="">Roadmap</a></li>
-        <li><a href="">FAQ</a></li>
+        <li><a class="mainnav-item" href="">Intro</a></li>
+        <li><a class="mainnav-item" href="">Oracles</a></li>
+        <li><a class="mainnav-item" href="">Qubics</a></li>
+        <li><a class="mainnav-item" href="">Protocol</a></li>
+        <li><a class="mainnav-item" href="">Roadmap</a></li>
+        <li><a class="mainnav-item" href="">FAQ</a></li>
       </ul>
     </nav>
+    <div class="flexbox-nav">
+
+      <div class="flexbox">
+        <nav class="logo-nav">
+          <a href="https://qubic.iota.org/"> <img class="qubic_logo" src="https://qubic.iota.org/static/qubic_font.svg" alt="Qubic Logo"></a>
+        </nav>
+
+        <label for="nav-toggle" class="mobile-mobile">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+      </div>
+
+      <div class="mobile-toggle">
+        <input type='checkbox' id='nav-toggle' class="nav-toggle">
+        <nav class="mobile-toggle">
+          <ul class="main">
+            <li><a class="mainnav-item" href="">Intro</a></li>
+            <li><a class="mainnav-item" href="">Oracles</a></li>
+            <li><a class="mainnav-item" href="">Qubics</a></li>
+            <li><a class="mainnav-item" href="">Protocol</a></li>
+            <li><a class="mainnav-item" href="">Roadmap</a></li>
+            <li><a class="mainnav-item" href="">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     <section class="intro">
       <h2>
@@ -49,7 +76,7 @@
     </section>
 
     <main>
-      <h1> The Qubic project</h1>
+      <h1> The Qubic Project</h1>
       <p class="main">
         After much speculation, the time has come to shed light on one of the most eagerly awaited developments within the IOTA community: Qubic. To be very clear, Qubic is still a work in progress. This website is meant to give the IOTA community
         and the wider public a comprehensive overview, to better understand what we are working on, and to help convey the enormous scope of the Qubic project.

@@ -1,7 +1,8 @@
-/* Smallest Breakpoint */
-/* @media screen and (max-width: 320px) {} */
-/* @supports (grid-area: auto) {
-  @media screen and (min-width: 321px) and (max-width: px) {} */
+/* @supports (grid-area: auto) {} */
+/* @supports (flexbox) {} */
+/* #1 Breakpoint */
+/* #2 Breakpoint */
+/* #3 Breakpoint */
 .grid {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
@@ -36,44 +37,144 @@ body {
   font-size: 1.125rem;
 }
 
-nav.subdomain {
-  border: 1px red solid;
-  grid-row: 1;
-  grid-column: span 3;
-  display: inline-flex;
-  justify-content: flex-end;
-  text-transform: uppercase;
+@media only screen and (max-width: 768px) {
+  nav.subdomain {
+    display: none;
+  }
+
+  ul.subdomain {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav.main {
+    display: none;
+  }
+
+  ul.main {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  li {
+    display: inline-flex;
+  }
+
+  div.flexbox-nav {
+    grid-column: span 3;
+    grid-row: 1;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    z-index: 2000;
+  }
+
+  img.qubic_logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 2000;
+  }
+
+  .bar {
+    width: 30px;
+    height: 2px;
+    margin: 10px;
+    background-color: #efefef;
+    opacity: .8;
+  }
+
+  div.mobile-toggle {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  label.mobile-mobile {
+    cursor: pointer;
+    z-index: 2000;
+  }
+
+  a.mainnav-item {
+    line-height: 2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  nav.mobile-toggle {
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav-toggle:checked~nav.mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30%;
+    background: linear-gradient(180deg, #8738cc -60%, #192344) no-repeat 50% 55%;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+  }
+
+  .nav-toggle:checked~.flexbox {}
 }
 
-ul.subdomain {
-  align-self: center;
-  margin-right: 50px;
-}
+@media only screen and (min-width: 768px) {
+  nav.subdomain {
+    border: 1px red solid;
+    grid-row: 1;
+    grid-column: span 3;
+    display: inline-flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+  }
 
-nav.main {
-  border: 1px orange solid;
-  grid-row: 2;
-  grid-column: span 3;
-  display: inline-flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-}
+  ul.subdomain {
+    align-self: center;
+    margin-right: 40px;
+  }
 
-ul.main {
-  align-self: center;
-  margin-right: 50px;
-}
+  nav.main {
+    border: 1px orange solid;
+    grid-row: 2;
+    grid-column: span 3;
+    display: inline-flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+  }
 
-li {
-  display: inline-flex;
-}
+  ul.main {
+    align-self: center;
+    margin-right: 40px;
+  }
 
-img.qubic_logo {
-  height: 40px;
-  width: 40px;
-  margin-left: 40px;
-  margin-bottom: 40px;
-  margin-top: 20px;
+  li {
+    display: inline-flex;
+  }
 }
 
 section.intro {
@@ -91,8 +192,7 @@ section.intro {
   background-position: left, top, bottom;
   background-repeat: no-repeat;
   background-size: cover, auto, auto;
-  back
-  margin-top: 180px;
+  back margin-top: 180px;
 }
 
 main {
