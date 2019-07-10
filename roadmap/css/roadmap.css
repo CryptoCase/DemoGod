@@ -137,18 +137,11 @@ body {
   }
 
   .nav-toggle:checked~.flexbox {}
-
-    div.main-desktop {
-      display: none;
-    }
-
-    nav.main-desktop {
-      display: none;
-    }
 }
 
 @media only screen and (min-width: 768px) {
   nav.subdomain {
+    border: 1px red solid;
     grid-row: 1;
     grid-column: span 3;
     display: inline-flex;
@@ -156,51 +149,31 @@ body {
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 400;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background: linear-gradient(90deg, #0a0b15 40%, #321b51);
   }
 
   ul.subdomain {
     align-self: center;
-    margin-right: 10px;
-    letter-spacing: 1px;
+    margin-right: 40px;
   }
 
-  a.subnav-item {
-    margin-right: 35px;
-  }
-
-  nav.main-desktop {
+  nav.main {
+    border: 1px orange solid;
     grid-row: 2;
     grid-column: span 3;
     display: inline-flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    padding-top: 25px;
-    padding-bottom: 40px;
   }
 
-  ul.main-desktop {
+  ul.main {
     align-self: center;
-    margin-right: 20px;
-  }
-
-  a.mainnav-item {
-    margin-right: 25px;
+    margin-right: 40px;
   }
 
   li {
     display: inline-flex;
-  }
-
-  div.logo-nav-desktop {
-    width: 90px;
-    height: 90px;
-    margin-left: 50px;
   }
 }
 
