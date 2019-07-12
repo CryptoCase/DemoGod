@@ -5,13 +5,13 @@
 /* #3 Breakpoint */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 7;
+  grid-template-columns: 1fr 16fr 1fr;
+  grid-template-rows: 15;
   grid-template-areas: ;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 3em;
   margin-bottom: 20px;
   background: linear-gradient(150deg, #ff7d11 -60%, #8738cc) no-repeat 50% 55%;
   -webkit-background-clip: text;
@@ -23,6 +23,22 @@ h1 {
 
 h2 {
   line-height: 1.8;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+div.h3roadmap {
+  height: 100px;
+  padding-top: 15px;
 }
 
 p {
@@ -37,7 +53,12 @@ body {
   font-size: 1.125rem;
 }
 
+/* Mobile */
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
   nav.subdomain {
     display: none;
   }
@@ -66,7 +87,6 @@ body {
   div.flexbox-nav {
     grid-column: span 3;
     grid-row: 1;
-    display: block;
     justify-content: space-between;
     align-items: center;
   }
@@ -116,7 +136,6 @@ body {
   }
 
   nav.mobile-toggle {
-    cursor: pointer;
     display: none;
   }
 
@@ -137,11 +156,19 @@ body {
   }
 
   .nav-toggle:checked~.flexbox {}
+
+  div.main-desktop {
+    display: none;
+  }
+
+  nav.main-desktop {
+    display: none;
+  }
 }
 
+/* Desktop */
 @media only screen and (min-width: 768px) {
   nav.subdomain {
-    border: 1px red solid;
     grid-row: 1;
     grid-column: span 3;
     display: inline-flex;
@@ -149,55 +176,62 @@ body {
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: linear-gradient(90deg, #0a0b15 40%, #321b51);
+  }
+
+  div.flexbox-nav {
+    display: none;
   }
 
   ul.subdomain {
     align-self: center;
-    margin-right: 40px;
+    margin-right: 10px;
+    letter-spacing: 1px;
   }
 
-  nav.main {
-    border: 1px orange solid;
+  a.subnav-item {
+    margin-right: 35px;
+  }
+
+  nav.main-desktop {
     grid-row: 2;
     grid-column: span 3;
     display: inline-flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 40px;
   }
 
-  ul.main {
+  ul.main-desktop {
     align-self: center;
-    margin-right: 40px;
+    margin-right: 20px;
+  }
+
+  a.mainnav-item {
+    margin-right: 25px;
   }
 
   li {
     display: inline-flex;
   }
+
+  div.logo-nav-desktop {
+    width: 90px;
+    height: 90px;
+    margin-left: 50px;
+  }
 }
 
-section.intro {
-  grid-row: 3;
-  grid-column: span 3;
-  padding: 30px;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 2px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  z-index: 4;
-  background-image: url(https://qubic.iota.org/static/q_bg_lines.svg), url(https://qubic.iota.org/static/q_tangle.svg), url(https://qubic.iota.org/static/q_earth.svg);
-  background-position: left, top, bottom;
-  background-repeat: no-repeat;
-  background-size: cover, auto, auto;
-  back margin-top: 180px;
-}
-
+/* Size Irrelevant */
 main {
-  grid-row: 4;
-  grid-column: span 3;
+  grid-row: 3;
+  grid-column: 2;
   padding: 30px;
 }
 
@@ -211,27 +245,84 @@ p.main {
   color: #9d5fd4;
 }
 
-ul.main_list {
-  padding-left: 30px;
-  margin-left: 18px;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+img.roadmap-item {
+  background: linear-gradient(320deg, #8738cc, #ff7d11);
+  width: 100%;
+  height: 150px;
+  padding: 10%;
+  opacity: .8;
 }
 
-li.main {
-  margin-left: 20px;
-  line-height: 1.8;
-  opacity: .9;
-  display: list-item;
-  list-style-type: disc;
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+div.roadmap-item {
+  background-color: #11142a;
+  height: 400px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 270px;
+  margin: 20px;
+}
+
+p.roadmap-item {
+  font-size: 16px;
+  line-height: 20px;
+  color: #aba6c4;
+  padding: 7%;
+}
+
+h2.abra {
+  grid-column: 2;
+  grid-row: 4;
+  margin-left: 40px;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+section.abra {
+  grid-column: 2;
+  grid-row: 5;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+  padding: 30px;
+}
+
+section.abralibraries {
+  grid-column: auto;
+  grid-row: 5;
+  display: flex;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+section.qubicprotocol {
+  grid-column: auto;
+  grid-row: 6;
+  display: flex;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+section.qtangle {
+  grid-column: auto;
+  grid-row: 7;
+  display: flex;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+section.oraclemachine {
+  grid-column: auto;
+  grid-row: 8;
+  display: flex;
+  padding-left: 10%;
+  margin-bottom: 20px;
 }
 
 button {
-  grid-row: 6;
+  grid-row: 9;
   grid-column: span 3;
   display: flex;
   justify-content: center;
@@ -256,13 +347,8 @@ img.intro_link {
   left: 10px;
 }
 
-section {
-  grid-row: 5;
-  grid-column: span 3;
-}
-
 footer {
-  grid-row: 7;
+  grid-row: 10;
   grid-column: span 3;
   text-align: center;
   background: radial-gradient(ellipse at bottom, #192344, transparent 70%) no-repeat;

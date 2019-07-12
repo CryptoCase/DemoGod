@@ -5,13 +5,13 @@
 /* #3 Breakpoint */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 16fr 1fr;
   grid-template-rows: 7;
   grid-template-areas: ;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 3em;
   margin-bottom: 20px;
   background: linear-gradient(150deg, #ff7d11 -60%, #8738cc) no-repeat 50% 55%;
   -webkit-background-clip: text;
@@ -38,6 +38,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
   nav.subdomain {
     display: none;
   }
@@ -116,7 +120,6 @@ body {
   }
 
   nav.mobile-toggle {
-    cursor: pointer;
     display: none;
   }
 
@@ -138,16 +141,20 @@ body {
 
   .nav-toggle:checked~.flexbox {}
 
-    div.main-desktop {
-      display: none;
-    }
+  div.main-desktop {
+    display: none;
+  }
 
-    nav.main-desktop {
-      display: none;
-    }
+  nav.main-desktop {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
   nav.subdomain {
     grid-row: 1;
     grid-column: span 3;
@@ -224,7 +231,7 @@ section.intro {
 
 main {
   grid-row: 4;
-  grid-column: span 3;
+  grid-column: 2;
   padding: 30px;
 }
 
