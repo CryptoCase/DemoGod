@@ -6,8 +6,8 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 16fr 1fr;
-  grid-template-rows: 15;
-  grid-template-areas: ;
+  grid-template-rows: 7;
+  grid-template-areas:
 }
 
 h1 {
@@ -23,22 +23,6 @@ h1 {
 
 h2 {
   line-height: 1.8;
-  font-size: 1.4em;
-}
-
-h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-div.h3roadmap {
-  height: 100px;
-  padding-top: 15px;
 }
 
 p {
@@ -52,6 +36,7 @@ body {
   color: #e6e6e6;
   font-size: 1.125rem;
 }
+
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
@@ -168,6 +153,11 @@ body {
   nav.main-desktop {
     display: none;
   }
+
+  li.footer {
+    font-size: 12px;
+  }
+
 }
 
 /* Desktop */
@@ -238,11 +228,45 @@ body {
     height: 90px;
     margin-left: 50px;
   }
+
+ul.footer {
+  display: flex;
+  letter-spacing: 2px;
+  padding: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  justify-content: center;
 }
 
-/* Size Irrelevant */
-main {
+  li.footer:hover {
+    color: #8738cc;
+    opacity: 1;
+  }
+  li.footer {
+    font-size: 14px;
+  }
+}
+
+section.intro {
   grid-row: 3;
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+  background-image: url(https://qubic.iota.org/static/q_bg_lines.svg), url(https://qubic.iota.org/static/q_tangle.svg), url(https://qubic.iota.org/static/q_earth.svg);
+  background-position: left, top, bottom;
+  background-repeat: no-repeat;
+  background-size: cover, auto, auto;
+  back margin-top: 180px;
+}
+
+main {
+  grid-row: 4;
   grid-column: 2;
   padding: 30px;
 }
@@ -257,162 +281,23 @@ p.main {
   color: #9d5fd4;
 }
 
-img.roadmap-item {
-  background: linear-gradient(320deg, #8738cc, #ff7d11);
-  width: 100%;
-  height: 150px;
-  padding: 10%;
-  opacity: .8;
+ul.main_list {
+  padding-left: 30px;
+  margin-left: 18px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-div.progress-bar {
-  background: linear-gradient(90deg, #ff7d11 -60%, #8738cc) no-repeat 50% 55%;
-  border-radius: 5px;
-  height: 7px;
-}
-
-div.roadmap-item {
-  display: flex;
-  flex-direction: column;
-  align-items: space-around;
-  justify-content: space-around;
-  background-color: #11142a;
-  height: auto;
-  width: 100%;
-  max-width: 270px;
-  min-width: 270px;
-  margin: 20px;
-  border-radius: 5px;
-}
-
-div.roadmap-item:hover {
-  box-shadow: .5px 2px 15px 3px rgba(135,56,204,0.4);
-}
-
-div.space {
-  height: 20px;
-}
-
-p.roadmap-item {
-  font-size: 16px;
-  line-height: 20px;
-  color: #aba6c4;
-  padding: 7%;
-  flex-grow: 1;
-}
-
-p.roadmap-item-sec {
-  font-size: 16px;
-  font-style: italic;
-  line-height: 20px;
-  color: #efefef;
-  opacity: .8;
-  padding-left: 7%;
-}
-
-h2.abra {
-  grid-column: 2;
-  grid-row: 4;
-  margin-left: 40px;
-  margin-right: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  height: 50px;
-}
-
-section.abra {
-  grid-column: 2;
-  grid-row: 5;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 10px;
-}
-
-h2.abralibraries {
-  grid-column: 2;
-  grid-row: 6;
-  margin-left: 40px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 20px;
-  height: 50px;
-}
-
-section.abralibraries {
-  grid-column: 2;
-  grid-row: 7;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 10px;
-}
-
-h2.qubicprotocol {
-  grid-column: 2;
-  grid-row: 8;
-  margin-left: 40px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 20px;
-  height: 50px;
-}
-
-section.qubicprotocol {
-  grid-column: 2;
-  grid-row: 9;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 10px;
-}
-
-h2.qtangle {
-  grid-column: 2;
-  grid-row: 10;
-  margin-left: 40px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 20px;
-  height: 50px;
-}
-
-section.qtangle {
-  grid-column: 2;
-  grid-row: 11;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 10px;
-}
-
-h2.oraclemachine {
-  grid-column: 2;
-  grid-row: 12;
-  margin-left: 40px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 20px;
-  height: 50px;
-}
-
-section.oraclemachine {
-  grid-column: 2;
-  grid-row: 13;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 10px;
+li.main {
+  margin-left: 20px;
+  line-height: 1.8;
+  opacity: .9;
+  display: list-item;
+  list-style-type: disc;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 div.buttons {
@@ -487,7 +372,6 @@ li.footer {
   display: flex;
   justify-content: center;
   letter-spacing: 2px;
-  font-size: 12px;
   padding: 22px;
   font-weight: 800;
   text-transform: uppercase;
