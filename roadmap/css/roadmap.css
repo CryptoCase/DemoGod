@@ -135,6 +135,10 @@ body {
     margin: 10px;
   }
 
+  a.mainnav-item:hover {
+  text-shadow: 4px 4px 10px #0a0b15;
+  }
+
   nav.mobile-toggle {
     display: none;
   }
@@ -195,6 +199,10 @@ body {
     margin-right: 35px;
   }
 
+  a.subnav-item:hover {
+    font-weight: 600;
+  }
+
   nav.main-desktop {
     grid-row: 2;
     grid-column: span 3;
@@ -215,6 +223,10 @@ body {
 
   a.mainnav-item {
     margin-right: 25px;
+  }
+
+  a.mainnav-item:hover {
+    color: #8738cc;
   }
 
   li {
@@ -253,13 +265,28 @@ img.roadmap-item {
   opacity: .8;
 }
 
+div.progress-bar {
+  background: linear-gradient(90deg, #ff7d11 -60%, #8738cc) no-repeat 50% 55%;
+  border-radius: 5px;
+  height: 7px;
+}
+
 div.roadmap-item {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
   background-color: #11142a;
-  height: 400px;
+  height: auto;
   width: 100%;
-  max-width: 300px;
+  max-width: 270px;
   min-width: 270px;
   margin: 20px;
+  border-radius: 5px;
+}
+
+div.space {
+  height: 20px;
 }
 
 p.roadmap-item {
@@ -267,6 +294,16 @@ p.roadmap-item {
   line-height: 20px;
   color: #aba6c4;
   padding: 7%;
+  flex-grow: 1;
+}
+
+p.roadmap-item-sec {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 20px;
+  color: #efefef;
+  opacity: .8;
+  padding-left: 7%;
 }
 
 h2.abra {
@@ -275,6 +312,8 @@ h2.abra {
   margin-left: 40px;
   margin-right: 10px;
   padding: 20px;
+  margin-bottom: 20px;
+  height: 50px;
 }
 
 section.abra {
@@ -286,43 +325,102 @@ section.abra {
   margin-bottom: 20px;
   margin-left: 30px;
   margin-right: 10px;
-  padding: 30px;
+}
+
+h2.abralibraries {
+  grid-column: 2;
+  grid-row: 6;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 50px;
 }
 
 section.abralibraries {
-  grid-column: auto;
-  grid-row: 5;
-  display: flex;
-  padding-left: 10%;
+  grid-column: 2;
+  grid-row: 7;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+h2.qubicprotocol {
+  grid-column: 2;
+  grid-row: 8;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 50px;
 }
 
 section.qubicprotocol {
-  grid-column: auto;
-  grid-row: 6;
-  display: flex;
-  padding-left: 10%;
+  grid-column: 2;
+  grid-row: 9;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+h2.qtangle {
+  grid-column: 2;
+  grid-row: 10;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 50px;
 }
 
 section.qtangle {
-  grid-column: auto;
-  grid-row: 7;
-  display: flex;
-  padding-left: 10%;
+  grid-column: 2;
+  grid-row: 11;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+h2.oraclemachine {
+  grid-column: 2;
+  grid-row: 12;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 50px;
 }
 
 section.oraclemachine {
-  grid-column: auto;
-  grid-row: 8;
-  display: flex;
-  padding-left: 10%;
+  grid-column: 2;
+  grid-row: 13;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+div.buttons {
+  margin: 40px;
+  grid-row: 14;
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
-  grid-row: 9;
+  grid-row: 14;
   grid-column: span 3;
   display: flex;
   justify-content: center;
@@ -341,14 +439,40 @@ a.intro_link {
   letter-spacing: 2px;
 }
 
+button:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
 img.intro_link {
   width: 22px;
   position: relative;
   left: 10px;
 }
 
+a.previous {
+  padding: 20px 40px;
+  border-radius: 35px;
+  margin-bottom: 70px;
+  background: hsla(0, 0%, 100%, .2);
+  opacity: .6;
+  box-shadow: 0px 20px 40px #000 .35;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+img.previous {
+  width: 22px;
+  position: relative;
+  right: 10px;
+  transform: rotate(-180deg);
+}
+
 footer {
-  grid-row: 10;
+  grid-row: 15;
   grid-column: span 3;
   text-align: center;
   background: radial-gradient(ellipse at bottom, #192344, transparent 70%) no-repeat;
@@ -363,6 +487,11 @@ li.footer {
   padding: 22px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+li.footer:hover {
+  color: #8738cc;
+  opacity: 1;
 }
 
 img.iota_logo {
