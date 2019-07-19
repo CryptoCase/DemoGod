@@ -285,6 +285,10 @@ div.roadmap-item {
   border-radius: 5px;
 }
 
+div.roadmap-item:hover {
+  box-shadow: .5px 2px 15px 3px rgba(135,56,204,0.4);
+}
+
 div.space {
   height: 20px;
 }
