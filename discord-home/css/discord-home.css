@@ -76,7 +76,8 @@ h2 {
   margin-bottom: 30px;
 }
 
-button.download {
+button.download-windows {
+  display: none;
   background-color: white;
   border: 1px solid white;
   border-radius: 3px;
@@ -91,6 +92,7 @@ button.download:hover {
 }
 
 button.open {
+  display: none;
   background-color: #7289DA;
   border: 1px solid #7289DA;
   border-radius: 3px;
@@ -103,6 +105,37 @@ button.open {
 
 button.open:hover {
   transform: translateY(1px);
+}
+
+button.download-android {
+  background-color: #7289DA;
+  border: 1px solid #7289DA;
+  border-radius: 3px;
+  height: 46px;
+  width: 250px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+button.download-android:hover {
+  transform: translateY(-1px);
+}
+
+button.download-ios {
+  display: none;
+  background-color: #7289DA;
+  border: 1px solid #7289DA;
+  border-radius: 3px;
+  height: 46px;
+  width: 250px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+button.download-ios:hover {
+  transform: translateY(-1px);
 }
 
 section {
@@ -143,7 +176,6 @@ img.android {
   position: relative;
   top: 24%;
   left: 20%;
-
 }
 
 img.iphone {

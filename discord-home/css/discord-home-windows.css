@@ -1,0 +1,340 @@
+h2 {
+  max-width: 750px;
+}
+
+button.open {
+  display: inline;
+  margin-left: 50px;
+}
+
+button.download-android {
+  display: none;
+}
+
+button.download-windows {
+  display: inline;
+}
+
+button.download-ios {
+  display: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 625px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: scroll;
+}
+
+div.device-agnostic-images {
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: auto;
+  grid-auto-flow: row;
+  padding-top: 30px;
+}
+
+img.laptop {
+  z-index: 3;
+  position: relative;
+  left: 520px;
+  bottom: 379px;
+}
+
+img.headphones {
+  z-index: 5;
+  width: 100px;
+  position: relative;
+  left: 825px;
+  bottom: 1094px;
+}
+
+img.android {
+  z-index: 2;
+  position: relative;
+  top: 320px;
+  left: 105px;
+}
+
+img.iphone {
+  display: inline-flex;
+  z-index: 3;
+  position: relative;
+  top: 325px;
+  left: 125px;
+}
+
+div.non-mobile-images {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: auto;
+  grid-auto-flow: row;
+  padding-top: 30px;
+}
+
+img.left-circle {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.right-circle {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.left-x {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.right-x {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.top-square {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.bottom-square {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.desktop-square {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.desktop-triangle {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.left-bottom-dot {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.left-top-dot {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.middle-dot {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.right-bottom-dot {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.right-top-dot {
+  z-index: 1;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.left-coin {
+  z-index: 2;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.right-coin {
+  z-index: 2;
+  position: relative;
+  right: -25%;
+  bottom: 20%;
+}
+
+img.question-box {
+  z-index: 1;
+  position: relative;
+  right: 325px;
+  bottom: 620px;
+}
+
+img.desktop {
+  z-index: 2;
+  position: relative;
+  right: 375px;
+  bottom: 637px;
+}
+
+img.controller {
+  z-index: 3;
+  position: relative;
+  right: 330px;
+  bottom: 747px;
+}
+
+img.controller-circle {
+  z-index: 3;
+  position: relative;
+  right: 50px;
+  bottom: 0%;
+}
+
+img.potion {
+  z-index: 1;
+  position: relative;
+  right: 705px;
+  bottom: 986px;
+}
+
+img.bomb {
+  z-index: 1;
+  position: relative;
+  right: 330px;
+  bottom: 747px;
+}
+
+img.floppy {
+  z-index: 1;
+  position: relative;
+  left: 165px;
+  bottom: 1540px;
+}
+
+img.disc {
+  z-index: 2;
+  position: relative;
+  left: 345px;
+  bottom: 1268px;
+}
+
+nav.links {
+  display: inline-flex;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+img.footer-logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div.footer-product {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div.footer-developers {
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div.footer-resources {
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div.footer-company {
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div.footer-more {
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+li {
+  text-align: left;
+}
+
+h5 {
+  text-align: left;
+}
+
+hr {
+  height: 1px;
+  width: 900px;
+  opacity: .1;
+  margin-bottom: 25px;
+  background-image: url(https://discordapp.com//assets/ffa0a8d74568beaa8ec72dd51951685c.svg);
+}
+
+div.try-discord {
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.footer-text {
+  margin-right: 450px;
+}
+
+h3 {
+color: #fff;
+font-weight: 400;
+font-size: 24px;
+line-height: 44px;
+}
+
+h4 {
+color: #eeeeee;
+opacity: .6;
+font-size: 14px;
+font-weight: 100;
+}
+
+button.footer-open-discord {
+  background-color: #7289DA;
+  border: 1px solid #7289DA;
+  border-radius: 3px;
+  height: 45px;
+  width: 125px;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  top: 10px;
+}
+
+button.footer-open-discord:hover {
+  transform: translateY(-1px);
+}
