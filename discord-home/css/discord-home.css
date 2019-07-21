@@ -111,35 +111,47 @@ section {
   height: 425px;
   margin-top: 50px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
-img.android {
-  z-index: 1;
-  position: absolute;
-  margin-left: -43%;
-  margin-top: 115px;
-}
-
-img.iphone {
-  z-index: 2;
-  position: absolute;
-  margin-left: -20%;
-  margin-top: 120px;
+div.device-agnostic-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  padding-top: 30px;
 }
 
 img.laptop {
   z-index: 3;
-  position: absolute;
-  margin-left: 200px;
-  margin-top: 23px;
+  grid-column: 2;
+  position: relative;
+  right: -25%;
 }
 
 img.headphones {
   z-index: 4;
   width: 100px;
-  position: absolute;
-  margin-left: 350px;
-  margin-top: 5px;
+  grid-column: 2;
+  position: relative;
+  bottom: 365px;
+  right: -45%;
+}
+
+img.android {
+  z-index: 1;
+  grid-column: 1;
+  position: relative;
+  top: 24%;
+  left: 20%;
+
+}
+
+img.iphone {
+  display: none;
+}
+
+div.non-mobile-images {
+  display: none;
 }
 
 footer {
@@ -153,7 +165,7 @@ footer {
 
 nav.links {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr 2fr;
   grid-template-areas:
     "logo . product"
@@ -180,6 +192,7 @@ div.footer-product {
 
 div.footer-developers {
   grid-area: developers;
+  margin-top: 20px;
 }
 
 div.footer-resources {
@@ -189,6 +202,7 @@ div.footer-resources {
 
 div.footer-company {
   grid-area: company;
+  margin-top: 20px;
 }
 
 div.footer-more {
