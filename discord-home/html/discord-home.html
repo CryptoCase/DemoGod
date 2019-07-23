@@ -22,21 +22,78 @@
 <body>
 
   <div class="nav">
-    <input type="" name="" value="">
-    <label for=""></label>
     <nav>
       <a href="https://discordapp.com"> <img class="discord-logo" src="https://discordapp.com/assets/c4e681296681c48b7a9be5e461fa9101.svg" alt=""></a>
     </nav>
-
-    <div class="mobile-menu-container">
-      <div class="mobile-menu"></div>
-      <div class="mobile-menu"></div>
-      <div class="mobile-menu"></div>
-    </div>
-
+    <label for="nav-toggle" class="mobile-mobile">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu"></div>
+        <div class="mobile-menu"></div>
+        <div class="mobile-menu"></div>
+      </div>
+    </label>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav class="main-nav">
-      <ul class="">
-        <li><a class="" href=""></a></li>
+      <ul class="mobile-main-nav">
+        <li class="mobile-main-nav"><a class="" href="https://discordapp.com/download">Download</a></li>
+        <li class="mobile-main-nav"><a class="" href="https://discordapp.com/nitro">Nitro</a></li>
+        <li class="mobile-main-nav"><a class="" href="https://discordapp.com/jobs">Jobs</a></li>
+        <label for="developers">
+          <li class="mobile-main-nav-drop-developers"><a class="">Developers</a> <img class="mobile-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
+        </label>
+        <input type="checkbox" id="developers" class="developers">
+        <ul class="mobile-subnav-developers">
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/sell-your-game">Sell Your Game</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/rich-presence">Rich Presence</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/verification">Verification</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/developers">Developer Portal</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/developers/docs">Documentation</a></li>
+        </ul>
+        <label for="community">
+          <li class="mobile-main-nav-drop-community"><a class="">Community</a> <img class="mobile-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
+        </label>
+        <input type="checkbox" id="community" class="community">
+        <ul class="mobile-subnav-community">
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/open-source">Open Source</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/partners">Partners</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/hypesquad">HypeSquad</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/guidelines">Guidelines</a></li>
+        </ul>
+        <label for="support">
+          <li class="mobile-main-nav-drop-support"><a class="">Support</a> <img class="mobile-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
+        </label>
+        <input type="checkbox" id="support" class="support">
+        <ul class="mobile-subnav-support">
+          <li class="mobile-subnav"><a class="" href="https://support.discordapp.com/hc/en-us">Help & Support</a></li>
+          <li class="mobile-subnav"><a class="" href="https://status.discordapp.com/">Status</a></li>
+          <li class="mobile-subnav"><a class="" href="https://blog.discordapp.com/parents-guide-to-discord-c77d91793e9c">Parent's Guide</a></li>
+          <li class="mobile-subnav"><a class="" href="https://discordapp.com/security">Security</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="desktop-nav">
+    <div class="left-nav">
+      <nav>
+        <a href="https://discordapp.com"> <img class="discord-logo" src="https://discordapp.com/assets/c4e681296681c48b7a9be5e461fa9101.svg" alt=""></a>
+      </nav>
+      <nav class="desktop-main-nav">
+        <ul class="desktop-main-nav">
+          <li><a class="" href="https://discordapp.com/download">Download</a></li>
+          <li><a class="" href="https://discordapp.com/nitro">Nitro</a></li>
+          <li><a class="" href="https://discordapp.com/jobs">Jobs</a></li>
+          <li><a class="" href="">Developers</a> <img class="desktop-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
+          <li><a class="" href="">Community</a> <img class="desktop-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
+          <li><a class="" href="">Support</a> <img class="desktop-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="social-nav">
+      <ul class="social-nav">
+        <li class="twitter"><a href="https://twitter.com/discordapp"> <img src="https://discordapp.com/assets/efc9b24f5779403afd12f5fc8594497f.svg" alt=""></a></li>
+        <li class="facebook"><a href="https://www.facebook.com/discordapp"> <img src="https://discordapp.com/assets/9b3163fa3bb9d1eb2be647fed797a211.svg" alt=""></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/discordapp/"> <img src="https://discordapp.com/assets/a9c828bc42fdacefb74f400a0b875e2e.svg" alt=""></a></li>
       </ul>
     </nav>
   </div>
@@ -77,14 +134,14 @@
       <img class="right-top-dot" src="https://discordapp.com/assets/f877364ca453abc089cf7fe8d22c9c3f.svg" alt="">
       <img class="left-coin" src="https://discordapp.com/assets/9e05338bd66e0985fceb83317cb94b9c.svg" alt="">
       <img class="right-coin" src="https://discordapp.com/assets/9e05338bd66e0985fceb83317cb94b9c.svg" alt="">
-      <a href="https://discordapp.com/assets/81d74b2ebb053fbccee41865a47d48c3.svg"><img class="question-box" src="https://discordapp.com/assets/81d74b2ebb053fbccee41865a47d48c3.svg" alt=""></a>
+      <a href=""><img class="question-box" src="https://discordapp.com/assets/81d74b2ebb053fbccee41865a47d48c3.svg" alt=""></a>
       <img class="desktop" src="https://discordapp.com/assets/0d82411c439e3558f8b2f6fb12eccbc1.svg" alt="">
       <img class="controller" src="https://discordapp.com/assets/c4bae281354a2b4e2db85415955e0994.svg" alt="">
       <img class="controller-circle" src="https://discordapp.com/assets/afdfaaeb6d6639e24086ced7aa07975d.svg" alt="">
       <img class="potion" src="https://discordapp.com/assets/0b5a0339571e72656eea93eb55d73eae.svg" alt="">
       <img class="bomb" src="https://discordapp.com/assets/eb301f28da3199edbd3ef19690d61674.svg" alt="">
-      <img class="floppy" src="https://discordapp.com/assets/215346366a9a7d50924fc245ddb048d2.svg" alt="">
-      <img class="disc" src="https://discordapp.com/assets/15149ecb9d5cd8faa24e1bbf45d70e5b.svg" alt="">
+      <img class="gamecartridge" src="https://discordapp.com/assets/215346366a9a7d50924fc245ddb048d2.svg" alt="">
+      <img class="shield" src="https://discordapp.com/assets/15149ecb9d5cd8faa24e1bbf45d70e5b.svg" alt="">
     </div>
   </section>
 

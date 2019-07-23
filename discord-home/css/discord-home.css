@@ -22,6 +22,8 @@ div.nav {
 
 img.discord-logo {
   height: 25px;
+  z-index: 101;
+  position: fixed;
 }
 
 div.mobile-menu-container {
@@ -39,11 +41,130 @@ nav.main-nav {
   display: none;
 }
 
+li.mobile-main-nav {
+  font-size: 2em;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  opacity: .8;
+}
+
+li.mobile-main-nav-drop-developers {
+  font-size: 2em;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  opacity: .8;
+}
+
+li.mobile-main-nav-drop-community {
+  font-size: 2em;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  opacity: .8;
+}
+
+li.mobile-main-nav-drop-support {
+  font-size: 2em;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  opacity: .8;
+}
+
+li.mobile-subnav {
+  padding-top: 20px;
+  font-size: 1.25em;
+  color: #7289DA;
+  font-weight: 600;
+  opacity: 1;
+}
+
+ul.mobile-subnav-developers {
+  display: none;
+}
+
+ul.mobile-subnav-community {
+  display: none;
+}
+
+ul.mobile-subnav-support {
+  display: none;
+}
+
+.developers:checked~ul.mobile-subnav-developers {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.community:checked~ul.mobile-subnav-community {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.support:checked~ul.mobile-subnav-support {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+img.mobile-arrow {
+  width: 12px;
+  height: 10px;
+  vertical-align: middle;
+}
+
+img.desktop-arrow {
+  width: 6px;
+  height: 5px;
+  vertical-align: middle;
+}
+
+.nav-toggle:checked~nav.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20%;
+  background: #23272A;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+label.mobile-mobile {
+  cursor: pointer;
+  z-index: 2000;
+}
+
 input {
   display: none;
 }
 
-label {
+div.desktop-nav {
   display: none;
 }
 
@@ -158,7 +279,7 @@ img.laptop {
   z-index: 3;
   grid-column: 2;
   position: relative;
-  right: -25%;
+  left: 20%;
 }
 
 img.headphones {
@@ -167,14 +288,14 @@ img.headphones {
   grid-column: 2;
   position: relative;
   bottom: 365px;
-  right: -45%;
+  left: 40%;
 }
 
 img.android {
-  z-index: 1;
+  z-index: 4;
   grid-column: 1;
   position: relative;
-  top: 24%;
+  top: 94px;
   left: 20%;
 }
 

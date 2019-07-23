@@ -1,10 +1,88 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "desktop-nav"
+    "main"
+    "section"
+    "footer";
+  background: #2C2F33;
+  font-family: sans-serif;
+}
+
+div.nav {
+  display: none;
+}
+
+div.desktop-nav {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+div.left-nav {
+  display: inline-flex;
+  align-items: center;
+}
+
+img.discord-logo {
+  height: 35px;
+  position: relative;
+  top: 3px;
+  margin-right: 20px;
+}
+
+ul.desktop-main-nav {
+  display: inline-flex;
+}
+
+li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav.social-nav {
+  display: inline-flex;
+  align-items: center;
+}
+
+ul.social-nav {
+  display: inline-flex;
+  align-items: center;
+}
+
+button.social-nav {
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 17px 7px;
+  margin-left: 5px;
+  margin-right: 25px;
+  border: 2px solid white;
+  border-radius: 20px;
+  opacity: .8;
+}
+
+div.hr {
+  display: none;
+  width: 2px;
+  height: 15px;
+  color: white;
+  background: white;
+  margin-left: 20px;
+  margin-right: 10px;
+  align-self: center;
+  opacity: .4;
+}
+
 h2 {
   max-width: 750px;
 }
 
 button.open {
   display: inline;
-  margin-left: 50px;
+  margin-left: 30px;
+  margin-bottom: 0px;
 }
 
 button.download-android {
@@ -13,6 +91,7 @@ button.download-android {
 
 button.download-windows {
   display: inline;
+  margin-bottom: 0px;
 }
 
 button.download-ios {
@@ -24,9 +103,9 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   height: 625px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  overflow: scroll;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  overflow: hidden;
 }
 
 div.device-agnostic-images {
@@ -41,7 +120,7 @@ img.laptop {
   z-index: 3;
   position: relative;
   left: 520px;
-  bottom: 379px;
+  bottom: 377px;
 }
 
 img.headphones {
@@ -49,13 +128,13 @@ img.headphones {
   width: 100px;
   position: relative;
   left: 825px;
-  bottom: 1094px;
+  bottom: 1093px;
 }
 
 img.android {
   z-index: 2;
   position: relative;
-  top: 320px;
+  top: 325px;
   left: 105px;
 }
 
@@ -63,7 +142,7 @@ img.iphone {
   display: inline-flex;
   z-index: 3;
   position: relative;
-  top: 325px;
+  top: 330px;
   left: 125px;
 }
 
@@ -76,265 +155,319 @@ div.non-mobile-images {
 }
 
 img.left-circle {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  right: 440px;
+  top: 20px;
+  opacity: .4;
 }
 
 img.right-circle {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  left: 490px;
+  top: 230px;
+  opacity: .4;
 }
 
 img.left-x {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  right: 680px;
+  bottom: 10px;
+  opacity: .4;
 }
 
 img.right-x {
   z-index: 1;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  left: 450px;
+  top: 220px;
+  opacity: .4;
 }
 
 img.top-square {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  left: 255px;
+  bottom: 180px;
+  opacity: .4;
 }
 
 img.bottom-square {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  left: 340px;
+  bottom: 20px;
+  opacity: .4;
 }
 
 img.desktop-square {
   z-index: 1;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  right: 70px;
+  top: 230px;
+  opacity: .4;
 }
 
 img.desktop-triangle {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  right: 50px;
+  bottom: 260px;
+  opacity: .4;
 }
 
 img.left-bottom-dot {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  right: 700px;
+  top: 60px;
+  opacity: .4;
 }
 
 img.left-top-dot {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  right: 370px;
+  bottom: 380px;
+  opacity: .4;
 }
 
 img.middle-dot {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  left: 95px;
+  bottom: 320px;
+  opacity: .4;
 }
 
 img.right-bottom-dot {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  left: 540px;
+  opacity: .4;
 }
 
 img.right-top-dot {
-  z-index: 1;
+  z-index: 10;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  left: 450px;
+  bottom: 485px;
+  opacity: .4;
 }
 
 img.left-coin {
-  z-index: 2;
+  z-index: 4;
   position: relative;
-  right: -25%;
-  bottom: 20%;
+  right: 500px;
+  bottom: 300px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-name: float;
 }
 
-img.right-coin {
-  z-index: 2;
-  position: relative;
-  right: -25%;
-  bottom: 20%;
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 20px);
+  }
 }
 
-img.question-box {
-  z-index: 1;
-  position: relative;
-  right: 325px;
-  bottom: 620px;
-}
+  img.right-coin {
+    z-index: 2;
+    position: relative;
+    bottom: 590px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-name: float;
+  }
 
-img.desktop {
-  z-index: 2;
-  position: relative;
-  right: 375px;
-  bottom: 637px;
-}
+  img.question-box {
+    z-index: 1;
+    position: relative;
+    right: 325px;
+    bottom: 620px;
+    cursor: default;
+  }
 
-img.controller {
-  z-index: 3;
-  position: relative;
-  right: 330px;
-  bottom: 747px;
-}
+  img.desktop {
+    z-index: 2;
+    position: relative;
+    right: 375px;
+    bottom: 637px;
+  }
 
-img.controller-circle {
-  z-index: 3;
-  position: relative;
-  right: 50px;
-  bottom: 0%;
-}
+  img.controller {
+    z-index: 3;
+    position: relative;
+    right: 330px;
+    bottom: 747px;
+  }
 
-img.potion {
-  z-index: 1;
-  position: relative;
-  right: 705px;
-  bottom: 986px;
-}
+  img.controller-circle {
+    z-index: 2;
+    position: relative;
+    right: 270px;
+    bottom: 863px;
+    opacity: .4;
+  }
 
-img.bomb {
-  z-index: 1;
-  position: relative;
-  right: 330px;
-  bottom: 747px;
-}
+  img.potion {
+    z-index: 1;
+    position: relative;
+    right: 705px;
+    bottom: 986px;
+  }
 
-img.floppy {
-  z-index: 1;
-  position: relative;
-  left: 165px;
-  bottom: 1540px;
-}
+  img.bomb {
+    z-index: 3;
+    position: relative;
+    right: 550px;
+    bottom: 1420px;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-name: float;
+  }
 
-img.disc {
-  z-index: 2;
-  position: relative;
-  left: 345px;
-  bottom: 1268px;
-}
+  img.gamecartridge {
+    z-index: 1;
+    position: relative;
+    left: 165px;
+    bottom: 1540px;
+    animation-duration: 2.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-name: float;
+  }
 
-nav.links {
-  display: inline-flex;
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
+  img.shield {
+    z-index: 2;
+    position: relative;
+    left: 345px;
+    bottom: 1268px;
+  }
 
-img.footer-logo {
-  height: 50px;
-  width: 50px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+  footer {
+    grid-area: footer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 
-div.footer-product {
-  margin-left: 40px;
-  margin-right: 40px;
-}
+  nav.links {
+    display: inline-flex;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+  }
 
-div.footer-developers {
-  margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+  img.footer-logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-div.footer-resources {
-  margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+  div.footer-product {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-div.footer-company {
-  margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+  div.footer-developers {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-div.footer-more {
-  margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+  div.footer-resources {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-li {
-  text-align: left;
-}
+  div.footer-company {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-h5 {
-  text-align: left;
-}
+  div.footer-more {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-hr {
-  height: 1px;
-  width: 900px;
-  opacity: .1;
-  margin-bottom: 25px;
-  background-image: url(https://discordapp.com//assets/ffa0a8d74568beaa8ec72dd51951685c.svg);
-}
+  li {
+    text-align: left;
+    padding-left: 0px;
+  }
 
-div.try-discord {
-  text-align: left;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
+  h5 {
+    text-align: left;
+  }
 
-div.footer-text {
-  margin-right: 450px;
-}
+  hr {
+    height: 1px;
+    width: 99%;
+    opacity: .1;
+    margin-bottom: 25px;
+    background-image: url(https://discordapp.com//assets/ffa0a8d74568beaa8ec72dd51951685c.svg);
+  }
 
-h3 {
-color: #fff;
-font-weight: 400;
-font-size: 24px;
-line-height: 44px;
-}
+  div.try-discord {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-h4 {
-color: #eeeeee;
-opacity: .6;
-font-size: 14px;
-font-weight: 100;
-}
+  div.footer-text {
+    position: relative;
+    right: 40%;
+  }
 
-button.footer-open-discord {
-  background-color: #7289DA;
-  border: 1px solid #7289DA;
-  border-radius: 3px;
-  height: 45px;
-  width: 125px;
-  font-size: 14px;
-  color: #fff;
-  position: relative;
-  top: 10px;
-}
+  h3 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+  }
 
-button.footer-open-discord:hover {
-  transform: translateY(-1px);
-}
+  h4 {
+    color: #eeeeee;
+    opacity: .6;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  button.footer-open-discord {
+    background-color: #7289DA;
+    border: 1px solid #7289DA;
+    border-radius: 3px;
+    height: 45px;
+    width: 125px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    top: 10px;
+    left: 40%;
+  }
+
+  button.footer-open-discord:hover {
+    transform: translateY(-1px);
+  }

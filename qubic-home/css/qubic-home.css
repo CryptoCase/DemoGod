@@ -144,8 +144,6 @@ body {
     z-index: 100;
   }
 
-  .nav-toggle:checked~.flexbox {}
-
   div.main-desktop {
     display: none;
   }
