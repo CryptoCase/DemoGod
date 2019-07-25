@@ -49,8 +49,7 @@ li.stay-open-support {
   padding-bottom: 20px;
 }
 
-ul.desktop-main-nav li.stay-open-developers:hover>ul.desktop-subnav-developers,
-ul.desktop-main-nav li.stay-open-developers ul.desktop-subnav-developers:hover {
+ul.desktop-main-nav li.stay-open-developers:hover>ul.desktop-subnav-developers {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -60,12 +59,13 @@ ul.desktop-main-nav li.stay-open-developers ul.desktop-subnav-developers:hover {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  left: 332px;
+  left: 332;
   top: 30px;
   margin-top: 30px;
   border: 1px solid white;
   border-radius: 5px;
   width: 140px;
+  z-index: 1000;
 }
 
 ul.desktop-subnav-developers {
@@ -73,8 +73,7 @@ ul.desktop-subnav-developers {
   position: fixed;
 }
 
-ul.desktop-main-nav li.stay-open-community:hover>ul.desktop-subnav-community,
-ul.desktop-main-nav li.stay-open-community ul.desktop-subnav-community:hover {
+ul.desktop-main-nav li.stay-open-community:hover>ul.desktop-subnav-community {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -455,11 +454,11 @@ img.shield {
 div.black-undershadow {
   background-color: #23272A;
   height: 50px;
-  width: 100%;
+  width: 99%;
   border: 1px solid #23272A;
   border-radius: 15px;
-  position: absolute;
-  top: 880px;
+  position: fixed;
+  top: 910px;
 }
 
 footer {

@@ -13,9 +13,7 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <link rel="stylesheet" href="C:\Users\csyou\Documents\Atom\portfolio\discord-home\css\reset.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
   <link rel="stylesheet" href="C:\Users\csyou\Documents\Atom\portfolio\discord-home\css\discord-home.css">
-  <!-- <link rel="stylesheet" href="C:\Users\csyou\Documents\Atom\portfolio\discord-home\css\discord-home-ios.css"> -->
   <link rel="stylesheet" href="C:\Users\csyou\Documents\Atom\portfolio\discord-home\css\discord-home-windows.css" media="(min-width: 850px)">
 </head>
 
@@ -25,14 +23,14 @@
     <nav>
       <a href="https://discordapp.com"> <img class="discord-logo" src="https://discordapp.com/assets/c4e681296681c48b7a9be5e461fa9101.svg" alt=""></a>
     </nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="mobile-mobile">
       <div class="mobile-menu-container">
-        <div class="mobile-menu"></div>
-        <div class="mobile-menu"></div>
-        <div class="mobile-menu"></div>
+        <div id="one" class="mobile-menu"></div>
+        <div id="two" class="mobile-menu"></div>
+        <div id="three" class="mobile-menu"></div>
       </div>
     </label>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav class="main-nav">
       <ul class="mobile-main-nav">
         <li class="mobile-main-nav"><a class="" href="https://discordapp.com/download">Download</a></li>
@@ -41,7 +39,8 @@
         <label for="developers">
           <li class="mobile-main-nav-drop-developers"><a class="">Developers</a> <img class="mobile-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
         </label>
-        <input type="checkbox" id="developers" class="developers">
+        <input type="radio" name="radio" id="developers" class="developers">
+        <input type="checkbox" name="checkbox" id="developers" class="developers">
         <ul class="mobile-subnav-developers">
           <li class="mobile-subnav"><a class="" href="https://discordapp.com/sell-your-game">Sell Your Game</a></li>
           <li class="mobile-subnav"><a class="" href="https://discordapp.com/rich-presence">Rich Presence</a></li>
@@ -52,7 +51,7 @@
         <label for="community">
           <li class="mobile-main-nav-drop-community"><a class="">Community</a> <img class="mobile-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
         </label>
-        <input type="checkbox" id="community" class="community">
+        <input type="radio" name="radio" id="community" class="community">
         <ul class="mobile-subnav-community">
           <li class="mobile-subnav"><a class="" href="https://discordapp.com/open-source">Open Source</a></li>
           <li class="mobile-subnav"><a class="" href="https://discordapp.com/partners">Partners</a></li>
@@ -62,7 +61,7 @@
         <label for="support">
           <li class="mobile-main-nav-drop-support"><a class="">Support</a> <img class="mobile-arrow" src="https://discordapp.com/assets/779a770c34fcb823a598a7277301adaf.svg" alt=""></li>
         </label>
-        <input type="checkbox" id="support" class="support">
+        <input type="radio" name="radio" id="support" class="support">
         <ul class="mobile-subnav-support">
           <li class="mobile-subnav"><a class="" href="https://support.discordapp.com/hc/en-us">Help & Support</a></li>
           <li class="mobile-subnav"><a class="" href="https://status.discordapp.com/">Status</a></li>

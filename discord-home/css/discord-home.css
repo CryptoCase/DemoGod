@@ -155,6 +155,24 @@ img.desktop-arrow {
   z-index: 100;
 }
 
+.nav-toggle:checked+label>div>#one {
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
+  right: 0px;
+}
+
+.nav-toggle:checked+label>div>#two {
+  display: none;
+}
+
+.nav-toggle:checked+label>div>#three {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+
 label.mobile-mobile {
   cursor: pointer;
   z-index: 2000;
