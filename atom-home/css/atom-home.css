@@ -265,3 +265,133 @@ img.astronaut {
     transform: translateY(-10px)
   }
 }
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main>div {
+  width: 225px;
+  color: #8e8373;
+}
+
+div.atom {
+  border: 1px solid #4e4b4d;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.atom h2 {
+  font-size: 22px;
+  letter-spacing: 6px;
+  font-weight: 500;
+  color: #efdab9;
+}
+
+div.version {
+  border: 1px solid #4e4b4d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85px;
+}
+
+div.version p {
+  color: #efdab9;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+div.version a {
+  font-size: 14px;
+}
+
+div.version a:hover {
+  color: #ffd152
+}
+
+div.operating-system {
+  border: 1px solid #4e4b4d;
+  padding: 20px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.operating-system p.os {
+  font-size: 20px;
+  color: #efdab9;
+  letter-spacing: 1.5px;
+}
+
+div.operating-system p.os-notes {
+  font-size: 14px;
+}
+
+div.download {
+  border: 1px solid #4e4b4d;
+  border-radius: 0px 0px 20px 20px;
+  padding: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.download button {
+  background-color: #ffd152;
+  height: 60px;
+  border: 1px solid #ffd152;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #343233;
+  font-weight: 600;
+}
+
+div.download button:hover {
+  background-color: #FFC31F;
+  border: 1px solid #FFC31F;
+}
+
+svg.download {
+  height: 16px;
+}
+
+div.terms {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+div.terms a:hover {
+  color: #ffd152
+}
+
+div.siblings {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 500px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+div.siblings a:hover {
+  color: #ffd152
+}
