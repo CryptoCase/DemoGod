@@ -1,0 +1,267 @@
+body {
+  background-color: #343233;
+  font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 16px;
+}
+
+/* Navigation */
+nav {
+  background-color: #574c4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+ul {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li {
+  font-size: 14px;
+  color: #efeae1;
+}
+
+li:hover {
+  color: #3b9b6d;
+}
+
+a.links {
+  padding: 15px
+}
+
+div.nav-svg {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+svg.sign-in {
+  height: 18px;
+}
+
+/* Nucleus */
+div.nucleus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+svg.nucleus {
+  position: absolute;
+  width: 100px;
+  height: auto;
+}
+
+img.inner-red {
+  animation-name: inner-red;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes inner-red {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.light-red {
+  animation-name: light-red;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes light-red {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.second-orange {
+  animation-name: second-orange;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes second-orange {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.light-orange {
+  animation-name: light-orange;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes light-orange {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.thick-yellow {
+  animation-name: thick-yellow;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes thick-yellow {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.third-yellow {
+  animation-name: third-yellow;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes third-yellow {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.fourth-blue {
+  animation-name: fourth-blue;
+  animation-duration: 110s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes fourth-blue {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.light-blue {
+  animation-name: light-blue;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes light-blue {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.fifth-skinny-blue {
+  animation-name: fifth-skinny-blue;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes fifth-skinny-blue {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.sixth-grey {
+  animation-name: sixth-grey;
+  animation-duration: 130s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes sixth-grey {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+img.seventh-static {
+  animation-name: seventh-static;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+img.astronaut {
+  animation-name: astronaut;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  position: absolute;
+  top: 175px;
+  left: 75px;
+}
+
+@keyframes astronaut {
+  from {
+    transform: translateY(5px)
+  }
+
+  to {
+    transform: translateY(-10px)
+  }
+}
