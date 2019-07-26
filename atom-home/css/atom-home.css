@@ -10,10 +10,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  padding: 10px;
+  height: auto;
 }
 
-ul {
+ul.mobile {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +26,7 @@ li {
   color: #efeae1;
 }
 
-li:hover {
+li.mobile:hover {
   color: #3b9b6d;
 }
 
@@ -318,7 +319,7 @@ div.version a {
 }
 
 div.version a:hover {
-  color: #ffd152
+  color: #ffd152;
 }
 
 div.operating-system {
@@ -338,6 +339,7 @@ div.operating-system p.os {
 
 div.operating-system p.os-notes {
   font-size: 14px;
+  color: #786f63
 }
 
 div.download {
@@ -380,6 +382,10 @@ div.terms {
   font-size: 14px;
 }
 
+div.terms p {
+  color: #786f63;
+}
+
 div.terms a:hover {
   color: #ffd152
 }
@@ -394,4 +400,121 @@ div.siblings {
 
 div.siblings a:hover {
   color: #ffd152
+}
+
+/* Sections */
+li {
+  display: inline-flex;
+}
+
+h1 {
+  color: #efdab9;
+  text-align: center;
+  font-size: 38.4px;
+  font-family: "Segoe UI";
+  font-weight: lighter;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+span {
+  color: #78b0a0
+}
+
+h2 {
+  color: #efdab9;
+  font-size: 32px;
+}
+
+h3 {
+  color: #efdab9;
+}
+
+p {
+  color: #efdab9;
+  line-height: 1.5;
+}
+
+section.teletype, section.github {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Segoe UI";
+  font-weight: lighter;
+}
+
+section.teletype div, section.github div {
+  max-width: 660px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+img.screenshot#yellow {
+  max-width: 100%;
+  border-radius: 5px;
+  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5)
+}
+
+img.screenshot#yellow:hover {
+  filter: none;
+}
+
+section p a {
+  color: #ffd152;
+}
+
+section p a:hover {
+  color: #FFC31F;
+}
+
+section button {
+  background-color: #ffd152;
+  border: 1px solid #ffd152;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #343233;
+  font-weight: 600;
+  padding: 12px;
+  width: 125px;
+}
+
+section button:hover {
+  background-color: #FFC31F;
+  border: 1px solid #FFC31F;
+}
+
+/* Section: Teletype */
+section img.background-stripes {
+  display: none;
+}
+
+/* Section: Github */
+section img.astronaut-planets {
+  display: none;
+}
+
+section button.blue {
+  background-color: #61efce;
+  border: 1px solid #61efce;
+}
+
+section button.blue:hover {
+  background-color: #33EAC0;
+  border: 1px solid #33EAC0;
+}
+
+img.screenshot#blue {
+  max-width: 100%;
+  border-radius: 5px;
+  filter: brightness(0.7) contrast(1) sepia(1) hue-rotate(115deg) saturate(1.5)
+}
+
+img.screenshot#blue:hover {
+  filter: none;
 }
