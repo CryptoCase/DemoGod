@@ -1,3 +1,27 @@
+/* Nucleus */
+img.astronaut {
+  display: inline;
+  animation-name: astronaut;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  position: relative;
+  bottom: 80px;
+  right: 280px;
+}
+
+@keyframes astronaut {
+  from {
+    transform: translateY(5px)
+  }
+
+  to {
+    transform: translateY(-10px)
+  }
+}
+
+/* Main */
 main>div {
   display: flex;
   justify-content: center;
@@ -29,6 +53,7 @@ section.teletype, section.github {
   height: 700px;
   max-width: 100%;
   overflow: hidden;
+  border: none;
 }
 
 section.teletype div {
@@ -47,6 +72,7 @@ img.screenshot {
 }
 
 img.screenshot-desktop#yellow {
+  display: inline;
   max-height: 500px;
   min-height: 500px;
   max-width: 100%;
@@ -85,6 +111,7 @@ section.github div {
 }
 
 img.screenshot-desktop#blue {
+  display: inline;
   max-height: 500px;
   min-height: 500px;
   max-width: 100%;
@@ -105,3 +132,91 @@ section img.astronaut-planets {
   height: 700px;
   margin-right: -50px;
 }
+
+/* Section: Features */
+section.features div ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-gap: 70px;
+}
+
+/* Section: Customization */
+section.features div, section.customization div, section.community div {
+  max-width: 900px;
+}
+
+section.customization div ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-gap: 70px;
+}
+
+/* Section: Community */
+section.community {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: row;
+}
+
+section.community div {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+section.community div div {
+  display: flex;
+  min-width: 340px;
+  max-width: 340px;
+  height: 300px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px
+}
+
+div.open-source p {
+  max-width: 100%;
+  text-align: left;
+
+  img.rocket {
+    display: inline;
+    position: absolute;
+    right: 5%;
+    top: 4000px;
+  }
+
+  /* Footer */
+  footer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+
+  nav.footer {
+    padding-bottom: 45px;
+  }
+
+  div.footer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 0px;
+  }

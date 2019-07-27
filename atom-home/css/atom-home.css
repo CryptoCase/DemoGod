@@ -247,24 +247,7 @@ img.seventh-static {
 }
 
 img.astronaut {
-  animation-name: astronaut;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  position: relative;
-  bottom: 80px;
-  right: 280px;
-}
-
-@keyframes astronaut {
-  from {
-    transform: translateY(5px)
-  }
-
-  to {
-    transform: translateY(-10px)
-  }
+display: none;
 }
 
 /* Main */
@@ -403,6 +386,17 @@ div.siblings a:hover {
 }
 
 /* Sections */
+section.teletype {
+border-bottom: 1px solid #1a191a;
+padding-bottom: 80px;
+}
+
+section.github {
+border-bottom: 1px solid #1a191a;
+padding-bottom: 80px;
+padding-top: 60px
+}
+
 li {
   display: flex;
 }
@@ -508,6 +502,10 @@ section button:hover {
   border: 1px solid #FFC31F;
 }
 
+img.screenshot-desktop {
+  display: none;
+}
+
 /* Section: Teletype */
 section img.background-stripes {
   display: none;
@@ -604,9 +602,17 @@ section.community {
 
 section.community div {
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section.community div img {
+div.open-source p {
+  max-width: 350px;
+  text-align: center;
+}
+
+img.rocket {
   display: none;
 }
 
