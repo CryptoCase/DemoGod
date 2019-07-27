@@ -252,9 +252,9 @@ img.astronaut {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
-  position: absolute;
-  top: 175px;
-  left: 75px;
+  position: relative;
+  bottom: 80px;
+  right: 280px;
 }
 
 @keyframes astronaut {
@@ -466,6 +466,10 @@ section.teletype div, section.github div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+section.teletype div img.screenshot-desktop {
+display: none;
 }
 
 img.screenshot#yellow {

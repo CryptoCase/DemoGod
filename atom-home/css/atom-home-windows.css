@@ -1,0 +1,107 @@
+main>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+div.atom {
+  border: 1px solid #4e4b4d;
+  border-radius: 20px 0px 0px 20px;
+}
+
+div.download {
+  border: 1px solid #4e4b4d;
+  border-radius: 0px 20px 20px 0px;
+}
+
+div.download button {
+  background-color: #ffd152;
+  height: 53px;
+  width: 150px;
+}
+
+/* Section: Teletype */
+section.teletype, section.github {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 700px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+section.teletype div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 350px;
+  max-width: 350px;
+  height: 380px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+img.screenshot {
+  display: none;
+}
+
+img.screenshot-desktop#yellow {
+  max-height: 500px;
+  min-height: 500px;
+  max-width: 100%;
+}
+
+img.screenshot-desktop#yellow {
+  max-width: 100%;
+  border-radius: 5px;
+  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5)
+}
+
+img.screenshot-desktop#yellow:hover {
+  filter: none;
+}
+
+section button {
+  margin-top: 20px;
+}
+
+section img.background-stripes {
+  display: inline-flex;
+  height: 700px;
+  margin-left: -800px;
+}
+
+/* Section: Github */
+section.github div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 350px;
+  max-width: 350px;
+  height: 380px;
+  margin-left: 100px;
+  margin-right: -100px;
+}
+
+img.screenshot-desktop#blue {
+  max-height: 500px;
+  min-height: 500px;
+  max-width: 100%;
+}
+
+img.screenshot-desktop#blue {
+  max-width: 100%;
+  border-radius: 5px;
+  filter: brightness(0.7) contrast(1) sepia(1) hue-rotate(115deg) saturate(1.5)
+}
+
+img.screenshot-desktop#blue:hover {
+  filter: none;
+}
+
+section img.astronaut-planets {
+  display: inline-flex;
+  height: 700px;
+  margin-right: -50px;
+}
