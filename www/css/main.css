@@ -126,7 +126,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 550px;
+  height: 500px;
   background-color: #1484EB;
   text-align: center;
   padding-left: 5%;
@@ -155,10 +155,10 @@ button.column {
   font-weight: 600;
   border: 2px solid #1484EB;
   border-radius: 30px;
-  margin-top: 40px;
   padding: 10px;
   width: 125px;
   height: 50px;
+  margin-bottom: 10px;
 }
 
 button.column:hover {
@@ -168,18 +168,18 @@ button.column:hover {
 }
 
 section.columns {
-  display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: minmax(283px, 400px));
-  grid-auto-flow: column;
+display: flex;
+justify-content: center;
+align-items: center;
   border: 1px solid #E6ECF8;
   border-radius: 10px;
   background-color: white;
   margin: auto;
   box-shadow: 0 10px 10px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
   max-width: 1200px;
+  margin-bottom: 50px;
 }
 
 section.columns div.left-column, section.columns div.middle-column, section.columns div.right-column {
@@ -187,7 +187,7 @@ section.columns div.left-column, section.columns div.middle-column, section.colu
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 50px;
+  padding: 25px;
   text-align: center;
 }
 
@@ -205,27 +205,36 @@ li {
 }
 
 section.columns div div p {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   line-height: 30px;
 }
 
 div.top {
-  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  height: 300px;
 }
 
 div.middle {
-  min-height: 125px;
+  min-height: auto;
 }
 
 div.bottom {
-  min-height: 225px;
+  min-height: auto;
 }
 
 div.top h4 {
+  color: #23272A;
+}
+
+div.top h6 {
   padding-bottom: 30px;
   color: #23272A;
-    line-height: 30px;
-    height: 100px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 div.middle h4 {
@@ -243,7 +252,7 @@ div.bottom h4 {
 div.top svg {
   height: 50px;
   width: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   fill: #1484EB;
   stroke: #1484EB;
   stroke-width: 1px;
@@ -385,7 +394,6 @@ section.contact h4 {
   font-size: 32px;
   font-weight: 800;
   color: white;
-  min-width: 280px;
 }
 
 section.contact p {

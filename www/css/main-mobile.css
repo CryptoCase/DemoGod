@@ -3,6 +3,24 @@ section.introduction svg {
   margin-bottom: -23px;
 }
 
+main h3 {
+  line-height: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 500px;
+  background-color: #1484EB;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  padding-top: 120px;
+}
+
 /* Section: Contact */
 section.contact {
   display: flex;
@@ -43,9 +61,8 @@ section.columns {
 
 div.middle-column {
   border-top: 2px solid #E6ECF8;
-  ;
   border-bottom: 2px solid #E6ECF8;
-  ;
+  background: #fbfcfe;
 }
 
 /* Section: Recent Work */
@@ -69,7 +86,10 @@ section.columns div div p {
   padding-right: 7%;
 }
 
-div.skills {}
+
+div.skills {
+
+}
 
 main {
   display: flex;
@@ -109,6 +129,12 @@ section.contact {
   justify-content: space-around;
   align-items: center;
   padding: 60px;
+}
+
+section.contact h4 {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
 }
 
 footer {
