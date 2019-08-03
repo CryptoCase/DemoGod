@@ -1,0 +1,7 @@
+#updated 08/02/2019
+
+User-agent:*
+
+Sitemap: https://affable-berm-248601.appspot.com/sitemap.xml
+
+# End robots.txt
