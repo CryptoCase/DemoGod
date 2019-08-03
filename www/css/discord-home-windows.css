@@ -193,7 +193,7 @@ button.download-ios {
 
 section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 700px 600px;
   grid-template-rows: 1fr;
   height: 625px;
   margin-top: 10px;
@@ -457,8 +457,9 @@ div.black-undershadow {
   width: 99%;
   border: 1px solid #23272A;
   border-radius: 15px;
-  position: fixed;
-  top: 910px;
+  position: absolute;
+  bottom: 380px;
+  margin: auto;
 }
 
 footer {
