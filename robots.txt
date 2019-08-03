@@ -2,6 +2,6 @@
 
 User-agent:*
 
-Sitemap: https://affable-berm-248601.appspot.com/sitemap.xml
+Sitemap: https://caseyscottyoung.com/sitemap.xml
 
 # End robots.txt

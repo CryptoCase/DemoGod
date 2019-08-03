@@ -6,7 +6,39 @@ handlers:
 - url: /
   static_files: www/index.html
   upload: www/index.html
+  secure: always
+
+- url: /contact
+  static_files: www/contact.html
+  upload: www/contact.html
+  secure: always
+
+- url: /contact-success
+  static_files: www/contact-success.html
+  upload: www/contact-success.html
+  secure: always
+
+- url: /atom-home
+  static_files: www/atom-home.html
+  upload: www/atom-home.html
+  secure: always
+
+- url: /discord-home
+  static_files: www/discord-home.html
+  upload: www/discord-home.html
+  secure: always
+
+- url: /qubic-home
+  static_files: www/qubic-home.html
+  upload: www/qubic-home.html
+  secure: always
+
+- url: /qubic-roadmap
+  static_files: www/qubic-roadmap.html
+  upload: www/qubic-roadmap.html
+  secure: always
 
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
+  secure: always
