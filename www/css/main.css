@@ -46,6 +46,7 @@ section.introduction {
   align-items: center;
   text-align: center;
   height: 770px;
+  overflow: hidden;
 }
 
 section.introduction img {
@@ -78,6 +79,7 @@ section.introduction svg {
   stroke-width: 2;
   margin-top: 80px;
   margin-bottom: -17px;
+  overflow:  hidden;
 }
 
 h1 {
@@ -406,6 +408,7 @@ section.contact button {
 /* Footer  */
 footer {
   height: 430px;
+  width: 100%;
   background-color: #23272A;
   display: flex;
   flex-direction: column;

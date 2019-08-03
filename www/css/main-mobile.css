@@ -66,3 +66,22 @@ section.columns div div p {
 padding-left: 7%;
 padding-right: 7%;
 }
+
+div.skills {
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  background-color: #1484EB;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 170px;
+  margin-bottom: 100px;
+}
