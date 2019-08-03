@@ -42,8 +42,10 @@ section.columns {
 }
 
 div.middle-column {
-  border-top: 2px solid #E6ECF8;;
-  border-bottom: 2px solid #E6ECF8;;
+  border-top: 2px solid #E6ECF8;
+  ;
+  border-bottom: 2px solid #E6ECF8;
+  ;
 }
 
 /* Section: Recent Work */
@@ -63,12 +65,11 @@ div.work-grid div {
 }
 
 section.columns div div p {
-padding-left: 7%;
-padding-right: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
-div.skills {
-}
+div.skills {}
 
 main {
   display: flex;
@@ -84,4 +85,40 @@ main {
   padding-top: 70px;
   padding-bottom: 170px;
   margin-bottom: 100px;
+}
+
+section.recent-work {
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: -100px;
+  padding-bottom: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section.contact {
+  background-color: #1484EB;
+  height: 350px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  top: 175px;
+  border: 1px solid #7289DA;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+}
+
+footer {
+  height: 530px;
+  width: 100%;
+  background-color: #23272A;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 80px;
 }

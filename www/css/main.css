@@ -354,7 +354,6 @@ div.contact {
 section.contact {
   background-color: #1484EB;
   height: 250px;
-  min-width: 400px;
   max-width: 1200px;
   margin: auto;
   position: relative;
