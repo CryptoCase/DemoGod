@@ -48,6 +48,11 @@ handlers:
   upload: www/sitemap.xml
   secure: always
 
+- url: /googlee15ae0a99895d98f.html
+  static_files: www/googlee15ae0a99895d98f.html
+  upload: www/googlee15ae0a99895d98f.html
+  secure: always
+
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
