@@ -21,18 +21,18 @@ nav svg {
   margin-left: 20px;
 }
 
-nav button {
+nav a.hello {
   color: #2C2F33;
   font-weight: 600;
   border: 2px solid #1484EB;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 30px;
-  padding: 10px;
-  width: 125px;
-  height: 50px;
   margin-right: 20px;
 }
 
-nav button:hover {
+nav a.hello:hover {
   background-color: #1484EB;
   border: 2px solid #1484EB;
   color: white;
@@ -79,7 +79,7 @@ section.introduction svg {
   stroke-width: 2;
   margin-top: 80px;
   margin-bottom: -17px;
-  overflow:  hidden;
+  overflow: hidden;
 }
 
 h1 {
@@ -150,27 +150,27 @@ div.skills {
   margin-right: 5%;
 }
 
-button.column {
+a.column {
   color: #2C2F33;
   font-weight: 600;
   border: 2px solid #1484EB;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 30px;
-  padding: 10px;
-  width: 125px;
-  height: 50px;
   margin-bottom: 10px;
 }
 
-button.column:hover {
+a.column:hover {
   background-color: #1484EB;
   border: 2px solid #1484EB;
   color: white;
 }
 
 section.columns {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #E6ECF8;
   border-radius: 10px;
   background-color: white;
@@ -233,8 +233,8 @@ div.top h4 {
 div.top h6 {
   padding-bottom: 30px;
   color: #23272A;
-  font-weight: 500;dddddddddddddddddddddddddddddddddd
-  font-style: italic;
+  font-weight: 500;
+  dddddddddddddddddddddddddddddddddd font-style: italic;
 }
 
 div.middle h4 {
@@ -300,25 +300,21 @@ div.work-grid {
 div.work-grid div {
   border: 2px solid #E6ECF8;
   border-radius: 10px;
-  height: 250px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  background-color: #464B51;
-  background-blend-mode: soft-light;
 }
 
 div.work-grid div:hover {
   border: none;
   box-shadow: 1px 2px 15px 6px rgba(20, 132, 235, 1);
   transform: translateY(-2px);
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 div.work-grid h5 {
@@ -331,23 +327,23 @@ section.recent-work div p a {
 }
 
 div.barkbud {
-  background-image: url(https://caseyscottyoung.com/images/barkbud-work.png);
+  background-image: url(https://caseyscottyoung.com/images/barkbud-work-dark.png);
 }
 
 div.qubic-home {
-  background-image: url(https://caseyscottyoung.com/images/qubic-work.png);
+  background-image: url(https://caseyscottyoung.com/images/qubic-work-dark.png);
 }
 
 div.qubic-roadmap {
-  background-image: url(https://caseyscottyoung.com/images/qubicroadmap-work.png);
+  background-image: url(https://caseyscottyoung.com/images/qubicroadmap-work-dark.png);
 }
 
 div.discord-home {
-  background-image: url(https://caseyscottyoung.com/images/discord-work.png);
+  background-image: url(https://caseyscottyoung.com/images/discord-work-dark.png);
 }
 
 div.atom-home {
-  background-image: url(https://caseyscottyoung.com/images/atom-work.png);
+  background-image: url(https://caseyscottyoung.com/images/atom-work-dark.png);
 }
 
 div.intro-work p {
@@ -375,16 +371,16 @@ section.contact {
   padding: 60px;
 }
 
-section.contact button {
+section.contact a {
   border: 2px solid white;
   border-radius: 30px;
-  padding: 10px;
-  width: 200px;
-  min-height: 50px;
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   color: white;
 }
 
-section.contact button:hover {
+section.contact a:hover {
   background-color: #23272A;
   border: 2px solid #23272A;
   color: white;
@@ -404,12 +400,6 @@ section.contact p {
   margin-right: 20px;
   max-width: 280px;
   padding: 10px;
-}
-
-section.contact button {
-  min-width: 150px;
-  max-width: 300px;
-  margin-right: 20px;
 }
 
 /* Footer  */

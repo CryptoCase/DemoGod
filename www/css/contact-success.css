@@ -21,18 +21,18 @@ nav svg {
   margin-left: 20px;
 }
 
-nav button {
+a.hello {
   color: #2C2F33;
   font-weight: 600;
   border: 2px solid #1484EB;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 30px;
-  padding: 10px;
-  width: 125px;
-  height: 50px;
   margin-right: 20px;
 }
 
-nav button:hover {
+a.hello:hover {
   background-color: #1484EB;
   border: 2px solid #1484EB;
   color: white;
